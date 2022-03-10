@@ -1,0 +1,133 @@
+{
+	"id": "22305afd-da82-4683-a299-dfad0322f188",
+	"name": "ecommerce",
+	"timestamp": "2022-03-10T16:38:55.709Z",
+	"collection_id": "19543998-490af62c-ab1a-4e57-a7e1-3d0d0c4d7d53",
+	"folder_id": 0,
+	"environment_id": "92e73914-1c72-4e20-86c9-4f0459806781",
+	"totalPass": 3,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "715e0d6c-8b81-491b-a090-75f232798b05",
+			"name": "user sign up",
+			"url": "https://ecommerceservice.herokuapp.com/user/signup",
+			"time": 2895,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2895
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8f86aff8-f804-4007-817a-ccb86350c8f0",
+			"name": "userlogin",
+			"url": "https://ecommerceservice.herokuapp.com/user/login",
+			"time": 2877,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status ": true
+			},
+			"testPassFailCounts": {
+				"Status ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2877
+			],
+			"allTests": [
+				{
+					"Status ": true
+				}
+			]
+		},
+		{
+			"id": "0110e2dc-dc16-4afc-bbc0-772d65d27a91",
+			"name": "New Request",
+			"url": "https://ecommerceservice.herokuapp.com/user/",
+			"time": 1843,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1843
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0d18e37d-3bf1-443f-9da1-468abf77c394",
+			"name": "deleteuserbyid",
+			"url": "https://ecommerceservice.herokuapp.com/user/6229c96bb48d5a0017a5bdcf",
+			"time": 719,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				719
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8334,
+	"collection": {
+		"requests": [
+			{
+				"id": "715e0d6c-8b81-491b-a090-75f232798b05",
+				"method": "POST"
+			},
+			{
+				"id": "8f86aff8-f804-4007-817a-ccb86350c8f0",
+				"method": "POST"
+			},
+			{
+				"id": "0110e2dc-dc16-4afc-bbc0-772d65d27a91",
+				"method": "GET"
+			},
+			{
+				"id": "0d18e37d-3bf1-443f-9da1-468abf77c394",
+				"method": "DELETE"
+			}
+		]
+	}
+}
